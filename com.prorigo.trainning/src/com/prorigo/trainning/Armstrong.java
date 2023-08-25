@@ -45,5 +45,6 @@ public class Armstrong {
 			if (isArmstrong(i))
 //prints the armstrong numbers  
 				System.out.print(i + ", ");
+		sc.close();
 	}
 }
