@@ -1,0 +1,34 @@
+package com.prorigo.programs;
+
+import java.lang.reflect.Method;
+
+public class MethodCountExample {
+
+    public static void main(String[] args) {
+        String className = MethodCountExample.class.getName();
+        System.out.println("Program Name: " + className);
+
+        int methodCount = countMethods(MethodCountExample.class);
+        System.out.println("Total Method Count: " + methodCount);
+    }
+
+    public static int countMethods(Class<?> clazz) {
+        int methodCount = 0;
+        Method[] methods = clazz.getDeclaredMethods();
+        methodCount += methods.length;
+
+        Class<?> superClass = clazz.getSuperclass();
+        while (superClass != null) {
+            Method[] superMethods = superClass.getDeclaredMethods();
+            methodCount += superMethods.length;
+            superClass = superClass.getSuperclass();
+        }
+
+        return methodCount;
+    }
+
+    public void exampleMethod() {
+        // Example method
+    }
+}
+

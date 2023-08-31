@@ -41,7 +41,6 @@ public class class_object
 		class_object ob=new class_object();
 		class_object ob1=new class_object();
 		
-		
 		ob.roll_no=56;
 		
 		ob1.roll_no=59;

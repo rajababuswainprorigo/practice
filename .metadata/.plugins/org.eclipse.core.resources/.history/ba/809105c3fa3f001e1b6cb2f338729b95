@@ -1,0 +1,29 @@
+package com.prorigo.trainning;
+
+
+//Importing input output classes
+import java.io.*;
+
+//Main class
+class GFG {
+
+ // Method 1
+ // Method inside main() method
+ void test()
+ {
+
+     // Print statement whenever this method is called
+     System.out.print("Inside class GFG");
+ }
+
+ // Method 2
+ // Main driver method
+ public static void main(String[] args)
+ {
+     // Creating an object class inside main() method
+     GFG obj = new GFG();
+
+     // Calling the class object inside main() method
+     obj.test();
+ }
+}

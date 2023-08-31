@@ -1,0 +1,72 @@
+package com.prorigo.trainning;
+
+
+class add
+{
+	
+	
+}
+
+
+public class class_object 
+{
+
+	
+	String n;
+	int i;
+	
+	
+	public class_object(String name,int id) 
+	{
+	//	this.name=name;
+		//this.id=id;
+		
+		n=name;
+		i=id;
+		System.out.println("this is constructor");
+		
+		System.out.println(name+" "+id);
+	}
+
+
+	public void disp()
+	{
+		  System.out.println("Hello");
+		
+	}
+	
+	
+	public void disp1(int i)
+	{
+		  System.out.println("method 1");
+		
+	}
+	
+	
+	
+	public int disp2(int i)
+	{
+		  System.out.println("method 2");
+		
+		  return 5;
+	}
+	
+	public int disp3()
+	{
+		  System.out.println("method 3");
+		
+		  return 5;
+	}
+	
+	
+	
+	public static void main(String[] args)
+	{
+		class_object  ob=new class_object ("fgfg",544);
+		
+		class_object  ob1=new class_object ("ghgh",645);
+		
+		ob.disp();
+	}
+
+}

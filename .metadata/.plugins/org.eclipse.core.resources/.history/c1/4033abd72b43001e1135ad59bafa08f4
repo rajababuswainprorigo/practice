@@ -1,0 +1,44 @@
+package com.prorigo.trainning;
+
+public class class_object 
+{
+
+	
+	public void disp()
+	{
+		  System.out.println("Hello");
+		
+	}
+	
+	
+	public void disp1(int i)
+	{
+		  System.out.println("method 1");
+		
+	}
+	
+	
+	
+	public int disp2(int i)
+	{
+		  System.out.println("method 2");
+		
+		  return 5;
+	}
+	
+	public int disp3()
+	{
+		  System.out.println("method 3");
+		
+		  return 5;
+	}
+	
+	
+	
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

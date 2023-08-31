@@ -1,0 +1,59 @@
+package com.prorigo.trainning;
+
+
+class add
+{
+	
+	
+}
+
+
+public class class_object 
+{
+
+	
+	String n;
+	int i;
+	
+	
+	static int roll_no;
+	
+	public static void  ab()
+	{
+		System.out.println("this is static method");
+		
+		
+	}
+	
+
+
+
+	public void bb()
+	{
+		
+		System.out.println("non static method "+
+		roll_no);
+	}
+	
+	
+	public static void main(String[] args)
+	{
+		class_object ob=new class_object();
+		class_object ob1=new class_object();
+		
+		
+		ob.roll_no=56;
+		
+		ob1.roll_no=59;
+		
+		
+		
+		ob.bb();
+		
+		
+		ob1.bb();
+	
+	
+	}
+
+}

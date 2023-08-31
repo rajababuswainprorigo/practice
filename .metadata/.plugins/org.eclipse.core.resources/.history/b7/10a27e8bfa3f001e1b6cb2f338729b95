@@ -1,0 +1,41 @@
+package com.prorigo.trainning;
+
+//Java Program Illustrating Can we have
+//Multiple main() Methods
+
+//Importing input output classes
+import java.io.*;
+
+//Main class
+class GFG {
+
+	// Method 1
+	void test()
+	{
+
+		// Print statement when this method is called
+		System.out.print("inside test");
+	}
+
+	// Method 2
+	// Main driver method
+	public static void main(int i)
+	{
+
+		// Creating object later calling of class
+		// inside this main() method
+		GFG obj = new GFG();
+		obj.test();
+	}
+
+	// Method 3
+	// Main driver method
+	public static void main()
+	{
+
+		// Creating object later calling of class
+		// inside this main() method
+		GFG obj = new GFG();
+		obj.test();
+	}
+}
