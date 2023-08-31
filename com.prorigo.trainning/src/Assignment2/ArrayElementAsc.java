@@ -2,6 +2,7 @@ package Assignment2;
 
 import java.util.Arrays;
 
+
 public class ArrayElementAsc {
 
 	public static void main(String[] args) {
@@ -11,8 +12,12 @@ public class ArrayElementAsc {
 		Arrays.sort(array);
 		System.out.println("Elements of array sorted in ascending order: ");
 //prints array using the for loop  
-		for (int i = 0; i < array.length; i++) {
-			System.out.println(array[i]);
+		for (int i : array) {    //changed from for to for each loop
+			System.out.print(i + " ");
 		}
 	}
 }
+
+
+
+

@@ -1,6 +1,6 @@
 package Assignment2;
 
-public class DuplicateElement {
+public class DuplicateElement{
 
 	public static void main(String[] args) {
 

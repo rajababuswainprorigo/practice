@@ -1,4 +1,4 @@
-package Assignment2;  //Array Elements in Descending order
+package Assignment2; //Array Elements in Descending order
 
 public class ArrayElementDesc {
 
@@ -8,14 +8,14 @@ public class ArrayElementDesc {
 		int temp = 0;
 
 		System.out.println("Elements of original array: "); // Displaying elements of original array
-		for (int i = 0; i < arr.length; i++) {// for each to be used
-			System.out.print(arr[i] + " ");
-		}
 
+		for (int n : arr) {   //changed from for to for each loop
+			System.out.print(n + " ");
+		}
 		for (int i = 0; i < arr.length; i++) { // Sort the array in descending order
 			for (int j = i + 1; j < arr.length; j++) {
 				if (arr[i] < arr[j]) {
-					temp = arr[i];            //bubble sort
+					temp = arr[i]; // bubble sort
 					arr[i] = arr[j];
 					arr[j] = temp;
 				}
@@ -26,10 +26,12 @@ public class ArrayElementDesc {
 
 		// Displaying elements of array after sorting
 		System.out.println("Elements of array sorted in descending order: ");
-		for (int i = 0; i < arr.length; i++) {
-			System.out.print(arr[i] + " ");
+		/*
+		 * for (int i = 0; i < arr.length; i++) { System.out.print(arr[i] + " "); }
+		 */
+		for (int n: arr) {// changed to for each loop from for
+			System.out.print(n + " ");
 		}
-
 	}
 
 	public static void main(String[] args) {
