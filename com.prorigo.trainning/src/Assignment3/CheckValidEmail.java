@@ -1,0 +1,24 @@
+package Assignment3;
+
+import java.util.regex.*;
+import java.util.*;
+
+public class CheckValidEmail {
+
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter email id to check whether it is valid or not :");
+		String emails = sc.next(); // getting the input
+
+		Pattern pattern = Pattern.compile("^(.+)@(.+)$"); // pattern that to be checked in string
+		Matcher macher = pattern.matcher(emails);
+
+		if (macher.matches()) {
+			System.out.println("The given mail is valid email");
+		} else {
+			System.out.println("The given mail is invalid email");
+			sc.close();
+		}
+	}
+
+}
