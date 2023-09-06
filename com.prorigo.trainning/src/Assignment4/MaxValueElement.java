@@ -1,0 +1,21 @@
+package Assignment4;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class MaxValueElement {
+
+	// Given a list of integers, find the maximum value element present in it
+
+	public static void main(String[] args) {
+		ArrayList<Integer> list = new ArrayList<Integer>(5); // decalre the arraylist
+
+		list.add(123);
+		list.add(336);
+		list.add(595);
+		list.add(695);
+
+		System.out.println("Max val is : " + Collections.max(list, null));
+	}
+
+}
